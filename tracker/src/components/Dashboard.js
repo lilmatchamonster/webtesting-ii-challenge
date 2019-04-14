@@ -1,26 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Dashboard extends Component {
-  state = { 
-    strike: "",
-    ball: "",
-    foul: "",
-    hit: ""
-  }
-  render() { 
-    return (
+function Dashboard(props) {
+  return (
+    <div>
+      <h2>Dashboard Controls</h2>
       <div>
-        <h2>Dashboard Controls</h2>
-        <div>
-          <button>Strike</button>
-          <button>Ball</button>
-          <button>Foul</button>
-          <button>Hit</button>
-        </div>
-        <button>Reset</button>
+        <button onClick={props.strike}>Strike</button>
+        <button onClick={props.ball}>Ball</button>
+        <button onClick={props.foul}>Foul</button>
       </div>
-    );
-  }
+      <button onClick={props.hit}>Hit</button>
+    </div>
+  );
 }
  
 export default Dashboard;
