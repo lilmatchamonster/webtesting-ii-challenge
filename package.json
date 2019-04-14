@@ -1,0 +1,8 @@
+{
+  "name": "webtesting-ii-challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lilmatchamonster/webtesting-ii-challenge.git",
+  "author": "Ashley Owens <ash4741@gmail.com>",
+  "license": "MIT"
+}
